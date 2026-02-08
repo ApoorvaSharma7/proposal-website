@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Love 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="bg"></div>
+
+<div class="card" id="page1">
+  <h1>Hey 💌</h1>
+  <p>Open me please 👉👈</p>
+  <button onclick="openLetter()">Open</button>
+</div>
+
+<div class="card hidden" id="page2">
+  <h2>Dear My Love ❤️</h2>
+
+  <div class="message-box">
+    <p>
+      From the moment you came into my life,<br><br>
+      everything started feeling warmer and brighter.<br><br>
+      Your smile fixes my bad days,<br>
+      and your presence makes my good days perfect 💕
+    </p>
+  </div>
+
+  <button onclick="showValentine()">Next</button>
+</div>
+
+<div class="card hidden" id="page3">
+  <h2>Will you be my Valentine? 💖</h2>
+  <button onclick="yesClicked()">YES 💕</button>
+  <button onclick="startGame()">Play a Game 😍</button>
+</div>
+
+<div class="card hidden" id="page4">
+  <h2>Fix all Broken Hearts 💔➡️💖</h2>
+  <p class="score">Repaired Hearts: <span id="score">0</span>/5</p>
+  <div id="emojiGrid"></div>
+</div>
+
+<canvas id="confetti"></canvas>
+
+<audio id="song" loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
